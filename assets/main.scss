@@ -4,15 +4,28 @@
 
 @import "minima";
 
-body {background-color:#fae1a8;}
+$whiteColor: #F5F4EB;
+$footerBackground: darken($whiteColor, 15%);
+
+body {background-color:$whiteColor;}
 
 .site-header { 
   background-size: cover;
   background-position: center center;
-  background-image:url('https://images.unsplash.com/photo-1541741212716-e3322d597384?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=018843f11d36524d9defb36ac789f258&auto=format&fit=crop&w=1190&q=80'); 
+  background-color: #121212;
+  color: $whiteColor;
+  border-bottom: solid 1px #434E3C;
+  background-position: top;
+  
   
   a.site-title,
   a.page-link {
-        color: honeydew;
+        color: $whiteColor;
+       
   }
 }
+
+footer {background-color:$footerBackground;}
+
+// #eee4e4
+
